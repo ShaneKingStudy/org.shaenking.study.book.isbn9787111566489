@@ -22,6 +22,7 @@ public class Col {
       RowsParser rowsParser = new RowsParser(commonTokenStream, 2);// col index 0
       rowsParser.setBuildParseTree(false);  //not need build parse tree
       ParseTree parseTree = rowsParser.file();
+      System.out.println(parseTree.toStringTree(rowsParser));
     }
   }
 }
